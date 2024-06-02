@@ -1,0 +1,22 @@
+---
+title: "Drosophila suzuki"
+format: html
+editor: visual
+---
+
+Voici les données pour la premiere semaine
+
+salut
+
+```{r setup, echo=FALSE}
+suppressWarnings({
+  if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
+  if (!requireNamespace("DT", quietly = TRUE)) install.packages("DT")
+  library(readxl)
+  library(DT)
+})
+file <- "C:\\Users\\natha\\Documents\\Droso\\Drosophilia suzuki vierge.xlsx"
+data <- as.data.frame(read_excel(file))
+datatable(head(data), options = list(dom = 't', paging = FALSE, ordering = FALSE), 
+          class = 'cell-border stripe')
+```
