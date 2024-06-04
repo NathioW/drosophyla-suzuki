@@ -6,8 +6,6 @@ editor: visual
 
 Voici les données pour la premiere semaine
 
-salut
-
 ```{r setup, echo=FALSE}
 suppressWarnings({
   if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
